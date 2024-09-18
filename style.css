@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: ubuntu, sans-serif;
+    background-color: #FFFFFF;
+}
+
+
+.first-section {
+    background-image: url(house.jpeg);
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgba(128, 128, 128, 0.5); 
+    background-blend-mode: darken; 
+    padding: 20px;
+    margin: 150px;
+    border-radius: 40px;
+    height: 90vh;
+    color: white;
+    text-align: start;
+    text-overflow: ellipsis;
+}
+
+
+h1{
+    text-shadow: gray;
+    font-weight: 500;
+    font-size: 70px;
+    margin-top: 150px;
+    
+}
+
+
+
+form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .form-div{
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  .grid-container {
+    background-color: #FBECED;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.round-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;    
+}
+
+.round-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item h1 {
+    font-size: 24px;
+    margin: 10px 0 5px 0; 
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+}
+
+
+.third-section {
+    background-image: url("https://assets.nicepagecdn.com/11a8ddce/4460241/images/pexels-photo-325185.jpeg");
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    padding: 20px;
+    margin: 150px;
+    border-radius: 40px;
+    height: 90vh;
+    margin-top: 80px;
+}
+.new-york{
+    font-size: 70px;
+    margin-left: 150px;
+    font-weight: bolder;
+}
+.new-york:p{
+    font-size: 20px;
+}
+
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 50px; 
+    margin: 0 auto; 
+    max-width: 1200px;
+    align-items: center; 
+    justify-self: center;
+    padding: 0px;
+    margin-bottom: 50px;
+    
+
+
+        
+}
+
+.grid-item-2 {
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 100%; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease-out;
+    background-color: gray;
+}
+
+
+.grid-item-2:hover img {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    .first-section {
+        margin: 50px;
+        height: auto;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+
+    .round-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .new-york {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .grid-container-2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-section {
+        margin: 20px;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+.third-section{
+    margin: 20px;
+        height: 100px;
+        padding: 10px;
+        border-radius: 10px;
+
+}
+
+    input {
+        width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .round-image {
+        width: 150px;
+        height: 150px;
+    }
+    .new-york {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .grid-container-2 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-section {
+        margin: 50px;
+        height: auto;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    h1 {
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    .third-section{
+        margin: 20px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 10px;
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .round-image {
+        width: 200px;
+        height: 200px;
+    }
+    .new-york {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .grid-container-2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+}
+
+@media (min-width: 3000px) {
+    .first-section {
+        margin: 200px;
+        padding: 40px;
+        border-radius: 60px;
+    }
+    h1 {
+        font-size: 100px;
+        margin-top: 200px;
+    }
+
+    
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 80px;
+    }
+
+    .third-section{
+        margin: 20px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 10px;
+
+    .round-image {
+        width: 300px;
+        height: 300px;
+    }
+    .new-york {
+        font-size: 100px;
+        margin-left: 200px;
+    }
+    .grid-container-2 {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 80px;
+    }
+}
+
+}
